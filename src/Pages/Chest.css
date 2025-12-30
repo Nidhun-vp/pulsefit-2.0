@@ -1,0 +1,140 @@
+:root {
+  --rb-bg: rgba(6, 0, 16, 0.75);
+  --rb-glow: rgba(132, 0, 255, 0.6);
+  --rb-border: rgba(132, 0, 255, 0.8);
+  --rb-text: #ffffff;
+}
+
+/* PAGE */
+.rb-exercise-container {
+  min-height: 100vh;
+  padding: 60px 40px;
+  color: var(--rb-text);
+  backdrop-filter: blur(10px);
+}
+
+/* BACK BUTTON */
+.rb-back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: transparent;
+  border: 1px solid var(--rb-border);
+  color: var(--rb-text);
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 15px var(--rb-glow);
+}
+
+/* LAYOUT */
+.rb-exercise-layout {
+  display: flex;
+  height: calc(100vh - 120px);
+  background: var(--rb-bg);
+  border-radius: 20px;
+  border: 1px solid var(--rb-border);
+  overflow: hidden;
+  box-shadow: 0 0 40px var(--rb-glow);
+}
+
+/* SIDEBAR */
+.rb-sidebar {
+  width: 280px;
+  padding: 20px;
+  border-right: 1px solid var(--rb-border);
+}
+
+.rb-sidebar h4 {
+  margin-bottom: 15px;
+}
+
+.rb-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.rb-sidebar li {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  transition: 0.3s;
+}
+
+.rb-sidebar li:hover {
+  background: rgba(132, 0, 255, 0.2);
+}
+
+.rb-sidebar li.active {
+  background: rgba(132, 0, 255, 0.4);
+  box-shadow: 0 0 15px var(--rb-glow);
+}
+
+/* CONTENT */
+.rb-content {
+  flex: 1;
+  padding: 30px;
+  text-align: center;
+}
+
+.rb-video {
+  max-width: 520px;
+  border-radius: 16px;
+  margin: 20px 0;
+  box-shadow: 0 0 30px var(--rb-glow);
+}
+
+.rb-desc {
+  opacity: 0.9;
+}
+
+.rb-reps span {
+  color: #caa6ff;
+}
+
+/* TIMER */
+.rb-timer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 1px solid var(--rb-border);
+  box-shadow: 0 0 20px var(--rb-glow);
+}
+
+.rb-timer span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.rb-timer button {
+  margin: 5px;
+  background: transparent;
+  color: white;
+  border: 1px solid var(--rb-border);
+  padding: 4px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Existing rb-content container */
+.rb-content {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;    /* Center horizontally */
+  justify-content: center; /* Center vertically if you want */
+  text-align: center;      /* Optional: center text */
+  gap: 20px;               /* Optional spacing between elements */
+  padding: 20px;
+}
+
+/* GIF styling */
+.rb-gif {
+  max-width: 100%;     /* Prevent overflow */
+  height: 400px;
+  border-radius: 10px; /* Optional: rounded corners */
+}
